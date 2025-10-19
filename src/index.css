@@ -1,0 +1,1191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-clr: #F5F5F5 !important;
+  --txt1-clr: #343339 !important;
+  --txt2-clr: #FFFFFF !important;
+}
+
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('../src/assets/Fonts/OTF/CabinetGrotesk-Regular.otf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NewYork';
+  src: url('../src/assets/Fonts/NewYork\ PERSONAL\ USE.ttf') format('woff2');
+  font-display: swap;
+}
+
+
+body{
+  background: var(--bg-clr);
+}
+
+.logo1, .menu-link, .btn, .featured-card-title, .featured-card-price, .featured-new, .content-para, 
+.ourRooms-see-all, .store-direction-btn, .footerLink-box-pages,.room1Hero-para,.room1Hero-btn,
+.roomPrice-title, .roomPrice-price, .room1Help-btn, .room1Help-para, .room1Help-btn, .navTab-label, 
+.tabBtn-label, .discription-para, .journal1-box1-subheading, .journal1-box4-inner-box1-para, 
+.journal1-box4-inner-box1-heading, .journal1-box4-inner-box2-subheading, .journal1-box4-inner-box3-para,
+.journal1-box4-inner-box3-heading, .overlay-text, .submit-btn, .MuiInputLabel-root, .faq-subheading,
+.accordion-heading, .accordion-para, .lamp-price, .lamp-para {
+  font-family: 'Cabinet Grotesk' !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+.logo2, .hero-heading span, .featured-heading, .content-heading, .images-heading, .ourRooms-heading,
+.roomDetail-text, .OurStores-heading, .store-title, .store-subtitle1, .footerLink-box-label, .rooms-heading,
+.room1Hero-heading, .room1Next-heading, .room1Help-title, .room1Help-heading, .shop-heading, .related-heading,
+.contact-heading, .faq-heading, .journal-design-heading, .journal1-box1-heading, .journal1-box2-heading,
+.journal1-box4-inner-box2-heading, .journal-heading, .overlay-heading, .lamp-heading {
+  font-family: 'NewYork' !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+.logo1,.logo2, .hero-heading span, .featured-heading, .featured-new, .content-heading, .content-para,
+.images-heading,.ourRooms-heading, .roomDetail-text, .OurStores-heading, .store-title,.store-subtitle1,
+.footerLink-box-label, .footerLink-box-pages, .rooms-heading, .room1Hero-heading ,.room1Hero-para,
+.room1Next-heading, .room1Help-title, .room1Help-para, .room1Help-heading, .shop-heading, .related-heading,
+.contact-heading, .faq-heading,.journal-design-heading, .journal1-box1-heading, .journal1-box2-heading, 
+.journal1-box4-inner-box1-para, .journal1-box4-inner-box2-heading, .journal1-box4-inner-box3-para, 
+.journal-heading, .overlay-heading, .overlay-text, .submit-btn, .MuiInputLabel-root, .accordion-para, 
+.lamp-heading, .lamp-para {
+  font-weight: 400 !important;
+}
+
+.btn, .featured-card-title,.featured-card-price, .ourRooms-see-all, .store-direction-btn
+,.room1Hero-btn, .room-title .roomPrice-price, .room1Help-btn, .room1Help-btn, .navTab-label,
+.tabBtn-label, .journal1-box1-subheading, .journal1-box4-inner-box1-heading, .journal1-box4-inner-box2-subheading,
+.journal1-box4-inner-box3-heading, .faq-subheading, .accordion-heading, .lamp-price {
+  font-weight: 500 !important;
+}
+
+.hero-inner, .featured, .content, .ourRooms,.OurStores, .footerLink, .room1Hero-inner, .room1Next,
+.shop-inner, .lamp-discription-inner, .contact-inner,.faq-inner, .journal1-box2, .journal-inner {
+  padding: 2em;
+}
+
+.hero-inner, .btn, .featured-new, .images, .ourRooms-see-all, .store-direction-btn, .footerLink-box,
+.rooms-inner, .room1Img, .room1Hero-btn, .room1Next, .room1Help-btn, .journal1-box1-inner, .journal1-box4,
+.center-content, .lampInner-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo1 ,.featured-card-price, .footerLink-box-pages, .roomPrice-price, .room1Help-btn, .navTab-label,
+.tabBtn-label, .journal1-box1-subheading, .journal1-box4-inner-box2-subheading, .faq-subheading, .lamp-price {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase;
+}
+
+.hero, .images , .rooms, .room1Img, .roomPrice-btn img, .room1Next-img, .journal1-box3,
+.lamp-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-heading span, .images-heading, .rooms-heading, .room1Hero-heading, .room1Next-heading, .shop-heading, 
+.contact-heading, .journal1-box2-heading, .journal-heading{
+  font-size: clamp(45px, 12vw, 152px);
+  line-height: 90%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-heading, .content-heading, .ourRooms-heading, .OurStores-heading, .related-heading,
+.faq-heading, .journal-design-heading, .journal1-box4-inner-box2-heading{
+  font-size: clamp(48px, 10vw, 110px) !important;
+  line-height: 110% !important;
+  color: var(--txt1-clr) !important;
+  text-align: center;
+}
+
+.ourRooms-see-all, .store-direction-btn, .room1Hero-btn,.room1Help-btn {
+  gap: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+/* Navbar */
+
+.logo1{
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo2{
+  font-size: 32px !important;
+  line-height: 110% !important;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 16px;
+  z-index: 5 !important;
+}
+.menu-box{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.menu-Icon{
+  padding-right: 4px !important;
+}
+
+
+.MuiAppBar-root, .MuiCard-root
+{
+  box-shadow: none !important;
+}
+.MuiButtonBase-root:hover,
+.MuiButtonBase-root:focus,
+.MuiButtonBase-root:active,
+.MuiCardActionArea-root:hover,
+.MuiCardActionArea-root:focus,
+.MuiCardActionArea-root:active {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.MuiCardActionArea-focusHighlight {
+  opacity: 0 !important;
+  background-color: transparent !important;
+}
+.MuiTouchRipple-root, .MuiTouchRipple-root {
+  display: none !important;
+}
+.Mui-focusVisible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.MuiCardActionArea-focusHighlight {
+  display: none !important;
+}
+
+
+/* Hero */
+/* Hero */
+
+.hero{
+  height: 110dvh;
+  width: 100%;
+  background-image: url(../src/assets/jean-philippe-delberghe-feijc-nqWKM-unsplash3.webp);
+}
+.hero-inner{
+  flex-direction: column;
+  text-align: center;
+  height: calc(110dvh - 64px);
+}
+.hero-heading span, .rooms-heading{
+  color: var(--txt2-clr);
+}
+.btn{
+  flex-direction: row;
+  gap: 10px;
+  padding: 1.5em;
+  border: 1px solid var(--txt1-clr);
+  border-radius: 500px;
+  margin-top: 20px;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+  background-color: var(--bg-clr);
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: var(--txt1-clr);
+  color: var(--txt2-clr);
+  transition: all ease  .5s;
+}
+
+
+/* Featured */
+/* Featured */
+
+.featured{
+  position: relative;
+}
+
+.featuredCard, .roomDetail {
+  position: relative;
+}
+.featured-img{
+  border-radius: 500px;
+  z-index: 0;
+}
+
+.featured-new {
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: calc(65% - 3vw + 5vw);
+
+  top: 20px;
+  background: var(--txt1-clr);
+  border-radius: 500px;
+  z-index: 2;
+  color: var(--txt2-clr);
+  font-size: 18px;
+}
+.featured-card-title{
+  font-size: 20px;
+  line-height: 25px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+}
+.featured-card-price{
+  color: var(--txt1-clr);
+}
+
+
+
+
+
+
+
+
+/* Content */
+/* Content */
+
+.content-heading{
+  text-align: start !important;
+}
+.content-inner-box{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 0px;
+  gap: 20px;
+}
+
+.content-para{
+  font-size: 20px;
+  line-height: 180% !important;
+  color: var(--txt1-clr);
+}
+
+
+/* Image */
+/* Image */
+
+.images{
+  height: 110vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../src/assets/mk-s-yh38-HUCces-unsplash.webp);
+  position: relative;
+  overflow: hidden;
+}
+.images-heading{
+  color: var(--txt2-clr);
+}
+.images-img1,.images-img2,.images-img3,.images-img4,.images-img5,.images-img6{
+  position: absolute;
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.images-img1{
+  left: 20%;
+  top: 10%;
+}
+.images-img2{
+  left: 40%;
+  top: -8%;
+}
+.images-img3{
+  right: 15%;
+  top: 16%;
+}
+.images-img4{
+  right: 0%;
+  top: 52%;
+}
+.images-img5{
+  left: 0%;
+  top: 60%;
+}
+.images-img6{
+  left: 12%;
+  bottom: -8%;
+}
+
+
+/* OurRooms */
+/* OurRooms */
+
+.ourRooms{
+  position: relative;
+}
+.rightArrow-icon{
+  color: var(--txt1-clr);
+}
+.roomDetail-img-container{
+  width: clamp(264px, 28vw, 370px);
+  height: clamp(264px, 28vw, 370px) !important;
+  border-radius: 50% !important;
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.roomDetail-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 100% !important;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt2-clr);
+  z-index: 3;
+}
+.roomDetail-img-overlay{
+  position: absolute;
+  left: 0px;
+  right: -0.33px;
+  top: 0px;
+  bottom: 0px;
+  background: var(--txt1-clr);
+  opacity: 0.3;
+  border-radius: 50% !important;
+  z-index: 2;
+}
+.roomDetail-img{
+  position: absolute;
+  height: clamp(264px, 28vw, 370px) !important;
+  z-index: 1;
+  border-radius: 50% !important;
+}
+
+
+/* OurStore */
+/* OurStore */
+
+.OurStores-heading{
+  text-align: start;
+}
+.store-card-img{
+  width: clamp(200px, 20vw, 240px) !important;
+  height: clamp(200px, 20vw, 240px) !important;
+  border-radius: 50%;
+}
+.store-card{
+  background-color: transparent !important;
+  display: flex; 
+}
+.store-title{
+  font-size: 36px !important;
+  line-height: 110% !important;
+  color: var(--txt1-clr);
+  margin-bottom: 10px !important;
+}
+.store-subtitle1{
+  font-size: 16px !important;
+  line-height: 110% !important;
+  margin-bottom: 5px !important;
+  color: var(--txt1-clr);
+}
+.store-direction-btn{
+  color: var(--txt1-clr);
+}
+
+
+/* Footer */
+/* Footer */
+
+.footerLink-box{
+  flex-direction: column;
+  margin-bottom: auto;
+  padding: 0px;
+  gap: 10px;
+}
+.footerLink-box-label{
+  font-size: 36px;
+  line-height: 110% !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+  text-decoration: none;
+}
+.footerLink-box-pages{
+  color: var(--txt1-clr);
+  text-decoration: none;
+}
+.footer-line{
+  text-align: center;
+  margin-top: 10vh;
+  color: var(--txt1-clr);
+}
+
+
+/* Rooms */
+/* Rooms */
+
+.rooms{
+  height: 100dvh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/nathan-van-egmond-0IwypLLbHiA-unsplash2.jpg);
+}
+.rooms-inner{
+  flex-direction: column;
+  height: calc(100dvh - 64px);
+}
+
+.room1Hero-inner{
+  flex-direction: column;
+}
+.room1Hero-heading{
+  margin-bottom: 10px;
+  text-align: start;
+  color: var(--txt1-clr);
+  text-transform: capitalize;
+}
+.room1Hero-para-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.room1Hero-para{
+  min-width: 52vw;
+  max-width: 660px;
+  font-size: 24px;
+  line-height: 170% !important;
+  color: var(--txt1-clr);
+}
+
+.room1Img{
+  width: 100%;
+  background-position: bottom;
+}
+.roomPrice-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  background: var(--bg-clr);
+  padding: .8em;
+  border-radius: 50px;
+}
+.roomPrice-btn img {
+  width: 60px; 
+  height: auto;
+  object-fit: cover; 
+  border-radius: 4px;
+  border-radius: 50%;
+}
+.roomPrice-title {
+  font-size: 20px;
+  line-height: 25px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+}
+.roomPrice-price { 
+  color: var(--txt1-clr);
+}
+
+
+.room1Next{
+  position: relative;
+}
+.room1Next-inner{
+  position: relative;
+  height: clamp(300px , 45vw, 45vw);
+  width: clamp(300px, 45vw, 45vw);
+  border-radius: 50%;
+}
+.room1Next-heading{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  color: var(--txt1-clr);
+}
+
+.room1Next-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.room1Help{
+  padding: 2em;
+}
+
+.room1Help-heading{
+  font-size: 96px;
+  line-height: 110% !important;
+  color: var(--txt1-clr);
+}
+
+.room1Help-btn{
+  justify-content: start;
+}
+.room1Help-title{
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 110% !important;
+  color: var(--txt1-clr);
+}
+
+.room1Help-para{
+  font-size: 18px;
+  line-height: 180% !important;
+  color: var(--txt1-clr);
+}
+
+.room1Help-btn{
+  letter-spacing: 0.1em !important;
+  color: var(--txt1-clr);
+}
+
+
+/* Shop */
+/* Shop */
+
+.shop-inner, .contact-inner, .faq-inner, .journal-inner{
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.shop-heading, .contact-heading, .faq-heading, .journal-heading{
+  line-height: 100%;
+  color: var(--txt1-clr);
+}
+
+.navTabs{
+  width: 100%;
+}
+
+.navTab-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navTab-label , .tabBtn-label{
+color: var(--txt1-clr) !important;
+}
+
+.css-1qltlow-MuiTabs-indicator {
+  background-color: transparent !important;
+}
+
+.lampHero{
+  margin-top: -64px;
+}
+
+.lampInner-box2{
+  padding: 3em;
+}
+
+.lamp-img{
+  width: 100%;
+  height: 100%;
+}
+
+.lamp-heading{
+font-size: clamp(48px, 10vw, 110px);
+line-height: 110% !important;
+color: var(--txt1-clr);
+margin-bottom: 10px;
+}
+
+.lamp-price{
+color: var(--txt1-clr);
+}
+
+.lamp-para{
+font-size: 20px !important;
+line-height: 180% !important;
+color: var(--txt1-clr);
+}
+
+
+.btn-box{
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.tabBtn-box{
+  margin-top: 2em;
+}
+
+.detail-box, .delivery-box, .return-box{
+  padding: 1em 3em;
+}
+
+.detail-heading, .delivery-heading, .return-heading{
+font-family: 'NewYork';
+font-style: normal;
+font-display: swap;
+font-weight: 400;
+font-size: 36px;
+line-height: 110%;
+color: var(--txt1-clr);
+margin-bottom: 10px;
+}
+.detail-para, .delivery-para, .return-para{
+font-family: 'Cabinet Grotesk';
+font-style: normal;
+font-display: swap;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: var(--txt1-clr);
+margin: 1em 0 1em 0px;
+}
+
+.detail-list{
+font-family: 'Cabinet Grotesk';
+font-style: normal;
+font-display: swap;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: var(--txt1-clr);
+margin-left: 25px;
+margin-bottom: 1em;
+
+}
+
+
+.discription-heading{
+font-family: 'NewYork';
+font-style: normal;
+font-display: swap;
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+text-transform: uppercase;
+color: var(--txt1-clr);
+}
+
+.discription-para{
+  font-size: 20px;
+  line-height: 180% !important;
+  color: var(--txt1-clr);
+}
+
+.lamp-related{
+  padding: 2em;
+}
+
+.css-1qt0id0-MuiBadge-badge,.css-352f28-MuiBadge-badge,.css-ihowzd-MuiBadge-badge {
+  position: relative !important;
+  font-family: 'Cabinet Grotesk' !important;
+  font-display: swap;
+  min-width: 16px !important;
+  padding: 4px !important;
+  height: 16px !important;
+  margin-left: 2px;
+  background-color: var(--txt1-clr) !important;
+  color: var(--txt2-clr);
+}
+
+.cart-badge{
+  align-items: center !important;
+}
+
+.cart-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-logo{
+font-family: 'NewYork';
+font-style: normal;
+font-display: swap;
+font-weight: 400;
+font-size: 36px;
+line-height: 110%;
+color: var(--txt1-clr) !important;
+}
+
+.cart-btn{
+font-family: 'Cabinet Grotesk' !important;
+font-style: normal;
+font-display: swap;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px !important;
+letter-spacing: 1px !important;
+text-transform: uppercase;
+color: var(--txt1-clr);
+}
+
+.cart-empty-text{
+  font-family: 'Cabinet Grotesk' !important;
+font-style: normal;
+font-display: swap;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px !important;
+letter-spacing: 1px !important;
+color: var(--txt1-clr);
+}
+
+.cart-product-Inner-box1{
+  overflow: hidden;
+}
+.cart-product-img{
+  border-radius: 500px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cart-product-Inner-box2{
+  margin: auto;
+}
+/* .cart-Inner-box2-inner{} */
+.card-product-heading{
+font-family: 'Cabinet Grotesk' !important;
+font-style: normal;
+font-display: swap;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px !important;
+letter-spacing: 1px !important;
+text-transform: uppercase;
+color: var(--txt1-clr);
+}
+
+.cart-product-qty-btn{
+  display: flex !important;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-top: 4px;
+  /* background: gold; */
+
+}
+.cart-product-quantity-btn {
+padding: 15px !important;
+  margin-top: 0px !important;
+  line-height: 0px !important;
+  letter-spacing: 0 !important;
+}
+.cart-product-price{
+font-family: 'Cabinet Grotesk' !important;
+font-style: normal;
+font-display: swap;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px !important;
+letter-spacing: 1px !important;
+text-transform: uppercase;
+color: var(--txt1-clr);
+}
+.cart-remove-btn{
+font-family: 'Cabinet Grotesk' !important;
+font-style: normal;
+font-display: swap;
+font-weight: 500;
+font-size: 16px;
+line-height: 0px !important;
+letter-spacing: 0em !important;
+text-transform: uppercase;
+color: var(--txt1-clr);
+text-decoration: none;
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+}
+
+.cart-product-total-box{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid #ccc;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;   
+  padding-top: 8px;  
+}
+
+.cart-product-total-text,.cart-product-total-price{
+font-family: 'Cabinet Grotesk' !important;
+font-style: normal;
+font-display: swap;
+font-weight: 500 !important;
+font-size: 20px;
+line-height: 25px !important;
+letter-spacing: 1px !important;
+text-transform: uppercase;
+color: var(--txt1-clr);
+}
+
+
+.cart-product-submit-btn{
+  width: 100%;
+  font-family: 'Cabinet Grotesk' !important;
+  font-display: swap;
+background: var(--txt1-clr) !important;
+border-radius: 500px !important;
+border: solid 2px var(--txt1-clr) !important;
+font-weight: 500 !important;
+padding: .8em 1em;
+font-size: 16px !important;
+  line-height: 20px !important;
+  color: var(--txt2-clr) !important;
+}
+.cart-product-submit-btn:hover{
+border: solid 2px var(--txt1-clr) !important;
+ font-weight: 500 !important;
+ color: var(--txt1-clr) !important;
+  background-color: var(--bg-clr) !important;
+}
+
+.lookbook {
+  display: flex;
+  flex-direction: column;
+}
+
+.lookbook-inner {
+  margin-top: -64px;
+  display: flex;
+  gap: 3vw; 
+  margin-left: -30px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2vw;
+ padding: 1vw 0; 
+}
+
+.box2, .box4, .box6 {
+ margin-top: -150px;
+}
+
+
+.img-pill {
+ width: 15.35vw;
+ height: 45.5vh;
+ border-radius: 500px;
+ object-fit: cover;
+ margin: 1vw 0;
+}
+
+
+.close-btn {
+  background: transparent;
+  color: var(--txt1-clr);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.center-overlay .img-pill {
+  width: 260px;
+  height: 340px;
+  box-shadow: 0 8px 32px rgba(40,40,40,0.16);
+}
+
+.center-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.center-content {
+  background: var(--bg-clr);
+  width: 320px;  
+  max-width: 90vw;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  height: 100%;
+}
+
+
+.center-content {
+  text-align: center;
+}
+
+.overlay-heading {
+  font-size: 34px;
+  line-height: 110% !important;
+  text-align: center;
+  color: var(--txt1-clr) !important;
+}
+
+.overlay-text {
+  font-size: 20px;
+  line-height: 120% !important;
+  text-align: center;
+  color: var(--txt1-clr);
+}
+
+.action-btn {
+  margin-top: .5rem;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: var(--txt2-clr);
+  cursor: pointer;
+}
+
+.submit-btn{
+  font-size: 16px !important;
+  line-height: 20px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+  padding: 1.1em 3.5em !important;
+  background: var(--txt1-clr) !important;
+  border-radius: 500px !important;
+  margin-right: auto !important;
+  border: solid 1px var(--txt1-clr) !important;
+  color: var(--txt2-clr) !important;
+  transition: all ease .5s;
+}
+.submit-btn:hover{
+  background: var(--bg-clr) !important;
+  color: var(--txt1-clr) !important;
+}
+
+.MuiInputLabel-root {
+  color: var(--txt1-clr) !important;
+  font-size: 18px;
+  line-height: 160% !important;
+  border-color: var(--txt1-clr) !important;
+}
+
+.faq-subheading{
+  color: var(--txt1-clr);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.faq-box{
+  display: flex;
+  justify-content: center;
+}
+
+.accordion-box{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-heading{
+  font-size: 28px;
+  line-height: 35px !important;
+  color: var(--txt1-clr);
+  padding: 1em 0;
+}
+.accordion-para{
+  font-size: 20px;
+  line-height: 180% !important;
+  color: var(--txt1-clr);
+}
+
+
+/* journal  */
+/* journal  */
+
+.journal-design{
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.journal-design-heading{
+  padding: 0 5vw;
+  text-decoration: none !important;
+}
+
+.journal-design-subheading {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+
+  font-family: 'Cabinet Grotesk' !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 20px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: var(--txt1-clr);
+}
+
+.journal-para{
+  max-width: 60vw;
+  font-family: 'Cabinet Grotesk' !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 20px;
+  line-height: 180% !important;
+  text-align: center;
+  color: var(--txt1-clr);
+}
+
+.journal-img{
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 793.333px;
+  margin-top: 20px;
+}
+
+
+.divider-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider{
+  background-color: var(--txt1-clr);
+  width: 2px;
+  height: clamp(5vw, 10vw, 20vw);
+}
+
+
+
+
+/* journal */
+/* journal */
+
+.journal1-box1-inner{
+  flex-direction: column;
+  padding: 3em 2em;
+}
+
+.journal1-box1-heading{
+  font-size: 36px;
+  line-height: 110% !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+}
+
+.journal1-box1-subheading{
+  color: var(--txt1-clr);
+}
+
+
+.journal1-box2{
+  position: relative;
+  z-index: 2;
+}
+
+.journal1-box2-heading, .journal1-box4-inner-box2-heading{
+  color: var(--txt1-clr);
+}
+
+
+.journal1-box3{
+  width: 100%;
+  margin-top: clamp(-5.5em, -12%, -8%);
+  position: relative;
+  z-index: 0;
+}
+
+
+.journal1-box4{
+  padding: 3em 2em;
+}
+
+.journal1-box4-inner, .journal1-box4-inner-box1{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.journal1-box4-inner-box1-para, .journal1-box4-inner-box3-para{
+  font-size: 18px;
+  line-height: 160% !important;
+  color: var(--txt1-clr);
+}
+
+.journal1-box4-inner-box1-heading, .journal1-box4-inner-box3-heading{
+  font-size: 28px;
+  line-height: 35px !important;
+  text-transform: uppercase;
+  color: var(--txt1-clr);
+}
+
+.journal1-box4-inner-box2-subheading{
+  text-align: center;
+  margin-top: 20px;
+  color: var(--txt1-clr);
+}
+
+.journal1-box4-inner-box3{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
