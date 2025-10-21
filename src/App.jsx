@@ -12,7 +12,7 @@ import Room5 from './Component/Room5';
 import Shop from './Pages/Shop';
 import Cart from './Pages/Cart';
 import LampShop from './Component/LampShop';
-import LookBook from './Pages/Lookbook';
+import LookBook from './Pages/LookBook';
 import Contact from './Pages/Contact';
 import Faq from './Pages/Faq';
 import Journal from './Pages/Journal';
