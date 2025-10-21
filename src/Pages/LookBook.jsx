@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../Component/Navbar';
-import ImgPill from '../Component/imgPill';
+import ImgPill from '../Component/ImgPill';
 import Img1 from '../assets/hemanth-nirujogi-Ghxq6VXEgOM-unsplash.jpg';
 import Img2 from '../assets/federico-giampieri-bYh_d5zDEAc-unsplash.jpg';
 import Img3 from '../assets/laura-davidson-1vIHVh9OaVI-unsplash.jpg';
