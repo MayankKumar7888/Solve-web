@@ -19,7 +19,8 @@ export default function Featured(){
         img: img2,
         title: 'Elegant Lamp',
         price: '$ 129.00 USD',
-        isNew: false
+        isNew: false,
+        path: '/lampShop'
       },
       {
         xs: 12, sm: 8, md: 4,

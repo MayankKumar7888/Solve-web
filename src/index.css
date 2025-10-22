@@ -708,20 +708,19 @@ color: var(--txt1-clr);
   padding: 2em;
 }
 
-.css-1qt0id0-MuiBadge-badge,.css-352f28-MuiBadge-badge,.css-ihowzd-MuiBadge-badge {
-  position: relative !important;
-  font-family: 'Cabinet Grotesk' !important;
-  font-display: swap;
-  min-width: 16px !important;
-  padding: 4px !important;
-  height: 16px !important;
-  margin-left: 2px;
-  background-color: var(--txt1-clr) !important;
-  color: var(--txt2-clr);
-}
 
 .cart-badge{
+  background-color: var(--txt1-clr);
+  color: var(--txt2-clr) !important;
+  min-width: 16px !important;
+  height: 16px !important;
+  font-family: 'Cabinet Grotesk' !important;
+  font-display: swap;
+  border-radius: 50%;
+  margin-left: 2px;
+  display: flex;
   align-items: center !important;
+  justify-content: center;
 }
 
 .cart-header{

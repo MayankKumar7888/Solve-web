@@ -53,20 +53,20 @@ export default function Navbar(props) {
   {pages.map((page) => (
     <ListItem key={page.label} disablePadding>
       {page.label === 'Cart' ? (
-        <ListItemButton onClick={toggleCartDrawer} sx={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Badge
-            badgeContent={cartProducts.length}
-            color="primary"
-            className='cart-badge'
-            anchorOrigin={{ horizontal: 'center', vertical: 'center' }}
-          >
-            <ListItemText primary={page.label} />
-          </Badge>
-        </ListItemButton>
-      ) : (
-        <ListItemButton component={Link} to={page.path} sx={{ textAlign: 'center' }}>
-          <ListItemText primary={page.label} />
-        </ListItemButton>
+        <ListItemButton onClick={toggleCartDrawer} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center'}}>       
+
+            <ListItemText primary={
+              <>
+                {page.label}&nbsp;{cartProducts.length > 0 && (<span className="cart-badge">{cartProducts.length}</span>)}
+              </>
+            }
+            primaryTypographyProps={{ component: 'div', sx: { display: 'flex', alignItems: 'center', justifyContent: 'center' } }}
+            secondary={null}
+            />
+          </ListItemButton>
+          ) : (
+          <ListItemButton component={Link} to={page.path} sx={{ textAlign: 'center' }}>
+          <ListItemText primary={page.label} /></ListItemButton>
       )}
     </ListItem>
   ))}
@@ -94,25 +94,25 @@ export default function Navbar(props) {
                     <Button
                       key={page.label}
                       onClick={toggleCartDrawer}
-                      sx={{ color: navColor, display: 'flex', alignItems: 'center' }}
+                      sx={{ color: navColor }}
                     >
-                      <Badge
-                        className='cart-badge'
-                        badgeContent={cartProducts.length}
-                        color="primary"
-                        anchorOrigin={{ horizontal: 'center', vertical: 'center' }}
-                      >
-                        <span>{page.label}</span>
-                      </Badge>
+                    <span>{page.label}</span>
+                      {cartProducts.length > 0 && (
+                    <span className="cart-badge">{cartProducts.length}</span>
+                    )}
                     </Button>
                   ) : (
-                    <Button key={page.label} component={Link} to={page.path} sx={{ color: navColor }}>
-                      {page.label}
-                    </Button>
-                  )
+                  <Button
+                    key={page.label}
+                    component={Link}
+                    to={page.path}
+                    sx={{ color: navColor }}
+                  >
+                {page.label}
+                </Button>
+                 )
                 )}
               </Box>
-
               <IconButton className='menu-Icon' color="inherit" aria-label="open drawer" edge="end" onClick={handleDrawerToggle} sx={{ color: navColor }} >
                 <svg width="35" height="14" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="-9" y1="4" x2="35" y2="4" stroke="currentColor" strokeWidth="4.5" />
