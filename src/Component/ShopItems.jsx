@@ -59,43 +59,43 @@ export default function ShopItems() {
       {
         xs: 12, sm: 8, md: 4,
         img: img4,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Velvet Retro Sofa',
+        price: '$ 349.00 USD',
         isNew: false,
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img7,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Olive Luxe Armchair',
+        price: '$ 259.00 USD',
         isNew: false,
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img8,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Modern Minimalist Sofa',
+        price: '$ 299.00 USD',
         isNew: false,
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img6,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Vintage Walnut Armchair',
+        price: '$ 249.00 USD',
         isNew: false
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img14,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Scarlet Lounge Chair',
+        price: '$ 269.00 USD',
         isNew: true
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img15,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Patio Rattan Set',
+        price: '$ 279.00 USD',
         isNew: false
       }
     ]
@@ -112,36 +112,36 @@ export default function ShopItems() {
       {
         xs: 12, sm: 8, md: 4,
         img: img9,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Ceramic Dome Lamp',
+        price: '$ 159.00 USD',
         isNew: true
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img10,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Rattan Lantern Lamp',
+        price: '$ 129.00 USD',
         isNew: false
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img11,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Fluted Glass Pendant',
+        price: '$ 149.00 USD',
         isNew: false
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img12,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Globe Cluster Lamp',
+        price: '$ 159.00 USD',
         isNew: false
       },
       {
         xs: 12, sm: 8, md: 4,
         img: img13,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Chrome Sphere Pendant',
+        price: '$ 119.00 USD',
         isNew: true
       }
     ]
@@ -164,8 +164,8 @@ export default function ShopItems() {
       {
         xs: 12, sm: 8, md: 4,
         img: img5,
-        title: 'Black Chair',
-        price: '$ 199.00 USD',
+        title: 'Blue Chair',
+        price: '$ 119.00 USD',
         isNew: false
       }
     ]
